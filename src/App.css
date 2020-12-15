@@ -111,6 +111,8 @@ h1 {
   display: flex;
   font-family: 'Big Shoulders Stencil Text', cursive;
   font-size: 24px;
+  padding: 15px 0px;
+  align-items: center;
 }
 
 .task span{
@@ -125,10 +127,10 @@ h1 {
   font-family: 'Big Shoulders Stencil Text', cursive;
   font-size: 24px;
   text-align: center;
-  height: 36px;
-  background-color: none;
+  height: 42px;
+  background-color: white;
 }
 
-.red {
+#red {
   background-color: #E65757;
 }
