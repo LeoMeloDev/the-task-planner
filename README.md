@@ -2,6 +2,10 @@
 
 Follow: https://trello.com/b/Hucl0Q0d
 
+# Follow latest version deployed
+
+https://the-task-planner.herokuapp.com/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
