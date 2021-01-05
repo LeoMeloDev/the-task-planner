@@ -4,10 +4,12 @@ import React from 'react'
 const AddTask = (props) => {
     const [inputValue, setInputValue] = React.useState('');
 
+
     const handleChange = (event) => setInputValue(event.target.value);
     const handleAddTask = () => {
         props.addToDo(inputValue)
         setInputValue('')
+     
     }    
     return (
         <div className="add__task">

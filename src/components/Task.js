@@ -1,9 +1,10 @@
 import React from 'react'
 import '../App.css'
 
-
 const Task = (props) => {
-
+  
+   
+    
     return (
         <div className="task">
             <ul>
@@ -11,9 +12,7 @@ const Task = (props) => {
                    item => 
                    <li key={item.task}>{item.task}
                     <span>
-                    <button >todo</button>
-                    <button className="yellow">doing</button>
-                    <button className="green">done</button>
+			        <button>Done</button>
                     </span>
                    </li>
                 )}

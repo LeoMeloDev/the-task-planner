@@ -8,13 +8,17 @@ import taskModule from './taskModule';
 const App = () => {
   const [items, setItems] = React.useState([]);
   
+  
   const handleData = (dataFromDb) => {
     const newdata = Object.values(dataFromDb);
     setItems(newdata)
+  
   }
 
+  
   React.useEffect(() => {
     taskModule.getTask(handleData);
+    
   }, []);
 
   
@@ -22,8 +26,10 @@ const App = () => {
     const newItems = [...items, {task: value}]
     setItems(newItems)
     taskModule.saveNewTask(value)
- 
+    
   }
+
+ 
 
   return (
     <div className="app">
@@ -31,8 +37,12 @@ const App = () => {
       <AddTask 
         placeholder="new task..."
         addToDo={handleAddNewItem}
+        
       />
-      <Task items={items}/>
+      <Task 
+      items={items}
+      
+      />
     </div>
   );
 }

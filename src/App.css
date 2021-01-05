@@ -131,6 +131,10 @@ h1 {
   background-color: white;
 }
 
-#red {
+.white {
+  background-color: #fff;
+}
+
+.red {
   background-color: #E65757;
 }

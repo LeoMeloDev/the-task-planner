@@ -11,14 +11,17 @@ const taskModule = (function() {
         saveNewTask: function(task) {
             newUserRef.push({
                 task: task,
+             
             })
         },
 
         getTask: function(handleData) {
-			db.ref('Task/').once('value').then((snapshot) => handleData(snapshot.val()));
-		},
+            db.ref('Task/').once('value').then((snapshot) => handleData(snapshot.val()));
+            
+        },
+        
     }
-      
+    
 })();
 
 
